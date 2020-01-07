@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.960
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YongqingProgramTest", "YongqingProgramTest\YongqingProgramTest.csproj", "{D4A34A82-D67F-4246-B703-FA13D2704FD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{C2EC178F-699F-44E0-8351-BC29F247024A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D4A34A82-D67F-4246-B703-FA13D2704FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4A34A82-D67F-4246-B703-FA13D2704FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4A34A82-D67F-4246-B703-FA13D2704FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2EC178F-699F-44E0-8351-BC29F247024A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2EC178F-699F-44E0-8351-BC29F247024A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2EC178F-699F-44E0-8351-BC29F247024A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2EC178F-699F-44E0-8351-BC29F247024A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
