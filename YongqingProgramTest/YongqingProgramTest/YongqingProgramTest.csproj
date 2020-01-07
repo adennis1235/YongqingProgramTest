@@ -31,4 +31,11 @@
     <Folder Include="ViewModel\In\" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Reference Include="Kendo.Mvc">
+      <HintPath>C:\Users\User\.nuget\packages\kendo.mvc\2016.2.616\lib\net451\Kendo.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
