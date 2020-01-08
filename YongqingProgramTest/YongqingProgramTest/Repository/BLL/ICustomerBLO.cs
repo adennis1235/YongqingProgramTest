@@ -8,10 +8,10 @@ namespace YongqingProgramTest.Repository.BLL
 {
     public interface ICustomerBLO
     {
-            List<Customer> GetAll();
-            List<Customer> GetById(string Id);
-            void Create(Customer item);
-            void Update(Customer item);
-            void Delete(Customer item);
-        }
+        List<Customer> GetAll();
+        List<Customer> GetById(string Id);
+        void Create(Customer item);
+        void Update(Customer item);
+        void Delete(Customer item);
     }
+}

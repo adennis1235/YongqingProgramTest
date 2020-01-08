@@ -4,6 +4,24 @@
 }
 
 <h1>客戶</h1>
+<form id="SearchForm" action="~/Customer" method="post">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                客戶編號 :
+            </div>
+            <div class="col-10">
+                <div class="input-group mb-3">
+                    <input type="text" name="CustomerId" size="5" class="form-control" placeholder="客戶編號" aria-label="客戶編號" aria-describedby="button-addon2" value="@Model.CustomerId">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="btnSearch"><i class="icon-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
 <div class="container" style="text-align:center;padding-top:2%">
     <div class="row" style="background-color: #DCDCDD;border:1px #46494C solid;">
         <div class="col-sm" style="border:1px #46494C solid;">
@@ -39,9 +57,17 @@
                     @Model.GetAllList[i].Phone
                 </div>
                 <div class="col-sm" style="border:1px #46494C solid;">
+                    <button type="button" class="btn btn-danger"><i class="icon-edit"></i></button>
                 </div>
             </div>
         }
     }
 
 </div>
+@{
+    string Random = new Random().Next().ToString();
+}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js?@Random" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="~/js/ViewScript/Customer/CustomerIndex.js?@Random"></script>

@@ -4,11 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using YongqingProgramTest.Models.DTO;
 
-namespace YongqingProgramTest.ViewModel.Out
+namespace YongqingProgramTest.ViewModel.In
 {
-    public class CustomerRVModel
+    public class CustomerVModel
     {
-       public List<Customer> GetAllList { get; set; }
        public string CustomerId { get; set; }
     }
 }
