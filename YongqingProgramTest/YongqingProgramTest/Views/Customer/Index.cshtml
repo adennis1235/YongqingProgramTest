@@ -73,9 +73,14 @@
     @Html.Hidden("CustomerId", "")
     @Html.Hidden("ActionType", "")
 </form>
-<form id="SaveEditForm" action="~/Customer/SaveEdit" method="post">
+@{
+    string _Action = "";
+    string _method = "";
+    _Action = YongqingProgramTest.ViewModel.Out.CustomerRVModel.EnumCustomer.DeleteCustomer.ToString();
+    _method = YongqingProgramTest.ViewModel.Out.CustomerRVModel.EnumCustomer.Post.ToString();
+}
+<form id="SaveEditForm" action="~/Customer/DeleteCustomer" method="Post">
     @Html.Hidden("CustomerId", "")
-    @Html.Hidden("ActionType", "")
 </form>
 @{
     string Random = new Random().Next().ToString();

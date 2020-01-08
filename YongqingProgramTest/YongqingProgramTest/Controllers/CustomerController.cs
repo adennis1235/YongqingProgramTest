@@ -58,29 +58,43 @@ namespace YongqingProgramTest.Controllers
             return View(_CustomerRVModel);
         }
         [HttpPost]
-        public IActionResult SaveEdit(CustomerVModel model)
+        public IActionResult CreateCustomer(CustomerVModel model)
         {
             CustomerRVModel _CustomerRVModel = new CustomerRVModel();
             Customer item = new Customer()
             {
-                CustomerId= model.CustomerId,
+                CustomerId = model.CustomerId,
                 CompanyName = model.CompanyName,
                 ContactName = model.ContactName,
                 Phone = model.Phone,
             };
-            if (model.ActionType == "A")
-            {
                 _BO.Create(item);
-            }
-            else if (model.ActionType == "U")
+            return RedirectToAction("Index", new { CustomerId = model.CustomerId });
+        }
+        [HttpPost]
+        public IActionResult UpdateCustomer(CustomerVModel model)
+        {
+            CustomerRVModel _CustomerRVModel = new CustomerRVModel();
+            Customer item = new Customer()
             {
-               _BO.Update(item);
-            }
-            else if (model.ActionType == "D")
+                CustomerId = model.CustomerId,
+                CompanyName = model.CompanyName,
+                ContactName = model.ContactName,
+                Phone = model.Phone,
+            };
+            _BO.Update(item);
+            return RedirectToAction("Index", new { CustomerId = model.CustomerId });
+        }
+        [HttpPost]
+        public IActionResult DeleteCustomer(string CustomerId)
+        {
+            CustomerRVModel _CustomerRVModel = new CustomerRVModel();
+            Customer item = new Customer()
             {
-                _BO.Delete(item);
-            }
-            return RedirectToAction("Index",new  { CustomerId= model.CustomerId });
+                CustomerId = CustomerId,
+            };
+            _BO.Delete(item);
+            return RedirectToAction("Index");
         }
     }
 }

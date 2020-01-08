@@ -4,8 +4,21 @@
 }
 
 <h1>Edit</h1>
-
-<form id="SaveEditForm" action="~/Customer/SaveEdit" method="post">
+@{ 
+    string _Action = "";
+    string _method = "";
+    if (Model.ActionType == "A")
+    {
+        _Action = YongqingProgramTest.ViewModel.Out.CustomerRVModel.EnumCustomer.CreateCustomer.ToString();
+        _method = YongqingProgramTest.ViewModel.Out.CustomerRVModel.EnumCustomer.Post.ToString();
+    }
+    else if (Model.ActionType == "U")
+    {
+        _Action = YongqingProgramTest.ViewModel.Out.CustomerRVModel.EnumCustomer.UpdateCustomer.ToString();
+        _method = YongqingProgramTest.ViewModel.Out.CustomerRVModel.EnumCustomer.Post.ToString();
+    }
+}
+<form id="SaveEditForm" action="~/Customer/@_Action" method="@_method">
     <div class="container" style="text-align:center;">
         <div class="row">
             <div class="col-sm" style="border:1px #46494C solid;">

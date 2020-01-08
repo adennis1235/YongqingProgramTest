@@ -14,5 +14,15 @@ namespace YongqingProgramTest.ViewModel.Out
         public string ContactName { get; set; }
         public string Phone { get; set; }
         public string ActionType { get; set; }
+
+        public enum EnumCustomer
+        {
+            CreateCustomer,
+            UpdateCustomer,
+            DeleteCustomer,
+            Post,
+            Patch,
+            Delete,
+        }
     }
 }
