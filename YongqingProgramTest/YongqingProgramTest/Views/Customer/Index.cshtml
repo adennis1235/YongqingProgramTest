@@ -79,7 +79,7 @@
     _Action = YongqingProgramTest.ViewModel.Out.CustomerRVModel.EnumCustomer.DeleteCustomer.ToString();
     _method = YongqingProgramTest.ViewModel.Out.CustomerRVModel.EnumCustomer.Post.ToString();
 }
-<form id="SaveEditForm" action="~/Customer/DeleteCustomer" method="Post">
+<form id="SaveEditForm" action="~/Customer/@_Action" method="@_method">
     @Html.Hidden("CustomerId", "")
 </form>
 @{
