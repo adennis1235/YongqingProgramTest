@@ -10,74 +10,71 @@ namespace YongqingProgramTest.Models.BLL
 {
     public class CustomerBLO : ICustomerBLO
     {
-            private ICustomerDAO _DO = null;
-           
-            public CustomerBLO(ICustomerDAO DO)
-            {
-                this._DO = DO;
-            }
-            public void Create(Customer item)
-            {
-                try
-                {
-                    _DO.Create(item);
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception(ex.Message);
-                }
-            }
+        private ICustomerDAO _DO = null;
 
-            public void Delete(Customer item)
+        public CustomerBLO(ICustomerDAO DO)
+        {
+            this._DO = DO;
+        }
+        public List<Customer> GetAll()
+        {
+            try
             {
-                try
-                {
-                    _DO.Delete(item);
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception(ex.Message);
-                }
+                return _DO.GetAll();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
 
-            public List<Customer> GetAll()
+        }
+        public List<Customer> GetById(string Id)
+        {
+            try
             {
-                try
-                {
-                    return _DO.GetAll();
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception(ex.Message);
-                }
+                return _DO.GetById(Id);
 
             }
-
-            public List<Customer> GetById(string Id)
+            catch (Exception ex)
             {
-                try
-                {
-                    return _DO.GetById(Id);
-
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception(ex.Message);
-                }
-
+                throw new Exception(ex.Message);
             }
 
-            public void Update(Customer item)
+        }
+        public void Create(Customer item)
+        {
+            try
             {
-                try
-                {
-                    _DO.Update(item);
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception(ex.Message);
-                }
-
+                _DO.Create(item);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
+        public void Update(Customer item)
+        {
+            try
+            {
+                _DO.Update(item);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+        public void Delete(Customer item)
+        {
+            try
+            {
+                _DO.Delete(item);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+      
     }
+}
