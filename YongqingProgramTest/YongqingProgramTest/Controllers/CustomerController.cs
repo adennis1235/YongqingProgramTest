@@ -17,14 +17,7 @@ namespace YongqingProgramTest.Controllers
         {
             _BO = BO;
         }
-        //[HttpGet]
-        //public IActionResult Index()
-        //{
-        //    CustomerRVModel _CustomerRVModel = new CustomerRVModel();
-        //    _CustomerRVModel.GetAllList = _BO.GetAll();
-        //    return View(_CustomerRVModel);
-        //}
-        //[HttpPost]
+     
         public IActionResult Index(CustomerVModel model)
         {
             CustomerRVModel _CustomerRVModel = new CustomerRVModel();

@@ -15,7 +15,6 @@ namespace YongqingProgramTest.Models.BLL
             public CustomerBLO(ICustomerDAO DO)
             {
                 this._DO = DO;
-                //_BOErr = BOErr;
             }
             public void Create(Customer item)
             {
@@ -25,13 +24,6 @@ namespace YongqingProgramTest.Models.BLL
                 }
                 catch (Exception ex)
                 {
-                    //if (EnumException.launchExp == true)
-                    //    throw new Exception();
-
-                    //ErrLogDMO.ErrorModel(GlobalObjs.errLog, GetType().Name, MethodBase.GetCurrentMethod().Name, ex);
-                    //_BOErr.AddErrLogProc(GlobalObjs.errLog);
-
-                    //EnumException.launchExp = true;
                     throw new Exception(ex.Message);
                 }
             }
@@ -44,13 +36,6 @@ namespace YongqingProgramTest.Models.BLL
                 }
                 catch (Exception ex)
                 {
-                    //if (EnumException.launchExp == true)
-                    //    throw new Exception();
-
-                    //ErrLogDMO.ErrorModel(GlobalObjs.errLog, GetType().Name, MethodBase.GetCurrentMethod().Name, ex);
-                    //_BOErr.AddErrLogProc(GlobalObjs.errLog);
-
-                    //EnumException.launchExp = true;
                     throw new Exception(ex.Message);
                 }
             }
@@ -63,13 +48,6 @@ namespace YongqingProgramTest.Models.BLL
                 }
                 catch (Exception ex)
                 {
-                    //if (EnumException.launchExp == true)
-                    //    throw new Exception();
-
-                    //ErrLogDMO.ErrorModel(GlobalObjs.errLog, GetType().Name, MethodBase.GetCurrentMethod().Name, ex);
-                    //_BOErr.AddErrLogProc(GlobalObjs.errLog);
-
-                    //EnumException.launchExp = true;
                     throw new Exception(ex.Message);
                 }
 
@@ -84,13 +62,6 @@ namespace YongqingProgramTest.Models.BLL
                 }
                 catch (Exception ex)
                 {
-                    //if (EnumException.launchExp == true)
-                    //    throw new Exception();
-
-                    //ErrLogDMO.ErrorModel(GlobalObjs.errLog, GetType().Name, MethodBase.GetCurrentMethod().Name, ex);
-                    //_BOErr.AddErrLogProc(GlobalObjs.errLog);
-
-                    //EnumException.launchExp = true;
                     throw new Exception(ex.Message);
                 }
 
@@ -104,13 +75,6 @@ namespace YongqingProgramTest.Models.BLL
                 }
                 catch (Exception ex)
                 {
-                    //if (EnumException.launchExp == true)
-                    //    throw new Exception();
-
-                    //ErrLogDMO.ErrorModel(GlobalObjs.errLog, GetType().Name, MethodBase.GetCurrentMethod().Name, ex);
-                    //_BOErr.AddErrLogProc(GlobalObjs.errLog);
-
-                    //EnumException.launchExp = true;
                     throw new Exception(ex.Message);
                 }
 

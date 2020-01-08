@@ -37,7 +37,6 @@ namespace YongqingProgramTest.Models.DAL
                 }
                 else
                 {
-                    //item.CustomerID = Guid.NewGuid().ToString();
                     _EF.Set<Customer>().Add(item);
                     _EF.SaveChanges();
                 }
