@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using Kendo.Mvc.Extensions;
-using Kendo.Mvc.UI;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using YongqingProgramTest.Models.DTO;
@@ -26,19 +24,19 @@ namespace YongqingProgramTest.WebApi
         {
             return new Out_ApiResponse(HttpStatusCode.OK, _BO.GetAll(), null);
         }
-        [HttpGet]
-        public DataSourceResult GetAll_Kendo([FromForm] DataSourceRequest args)
-        {
-            try
-            {
-                return _BO.GetAll().ToDataSourceResult(args);
-            }
-            catch (Exception e)
-            {
-                var ex = e.Message;
-                throw new NotImplementedException(e.Message);
-            }
-        }
+        //[HttpGet]
+        //public DataSourceResult GetAll_Kendo([FromForm] DataSourceRequest args)
+        //{
+        //    try
+        //    {
+        //        return _BO.GetAll().ToDataSourceResult(args);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        var ex = e.Message;
+        //        throw new NotImplementedException(e.Message);
+        //    }
+        //}
         [HttpPost]
         public Out_ApiResponse Create(Customer Item)
         {
