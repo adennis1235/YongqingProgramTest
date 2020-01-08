@@ -23,7 +23,7 @@ namespace YongqingProgramTest.Models.DAL
             }
             catch (Exception e)
             {
-                throw new NotImplementedException(e.Message);
+                //throw new NotImplementedException(e.Message);
             }
         }
         public List<Customer> GetAll()
@@ -34,7 +34,8 @@ namespace YongqingProgramTest.Models.DAL
             }
             catch (Exception e)
             {
-                throw new NotImplementedException(e.Message);
+                return null;
+                //throw new NotImplementedException(e.Message);
             }
         }
         public List<Customer> GetById(string Id)
@@ -49,7 +50,8 @@ namespace YongqingProgramTest.Models.DAL
             }
             catch (Exception e)
             {
-                throw new NotImplementedException(e.Message);
+                return null;
+                //throw new NotImplementedException(e.Message);
             }
         }
         public void Create(Customer item)
@@ -68,7 +70,7 @@ namespace YongqingProgramTest.Models.DAL
             }
             catch (Exception e)
             {
-                throw new NotImplementedException(e.Message);
+                //throw new NotImplementedException(e.Message);
             }
         }
         public void Update(Customer item)
@@ -87,7 +89,7 @@ namespace YongqingProgramTest.Models.DAL
             }
             catch (Exception e)
             {
-                throw new NotImplementedException(e.Message);
+                //throw new NotImplementedException(e.Message);
             }
         }
         public void Delete(Customer item)
@@ -106,7 +108,7 @@ namespace YongqingProgramTest.Models.DAL
             }
             catch (Exception e)
             {
-                throw new NotImplementedException(e.Message);
+                //throw new NotImplementedException(e.Message);
             }
         }
         private bool disposed = false;

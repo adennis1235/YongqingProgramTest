@@ -24,7 +24,8 @@ namespace YongqingProgramTest.Models.BLL
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return null;
+                //throw new Exception(ex.Message);
             }
 
         }
@@ -37,7 +38,8 @@ namespace YongqingProgramTest.Models.BLL
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                return null;
+                //throw new Exception(ex.Message);
             }
 
         }
@@ -49,7 +51,7 @@ namespace YongqingProgramTest.Models.BLL
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                //throw new Exception(ex.Message);
             }
         }
         public void Update(Customer item)
@@ -60,7 +62,7 @@ namespace YongqingProgramTest.Models.BLL
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                //throw new Exception(ex.Message);
             }
 
         }
